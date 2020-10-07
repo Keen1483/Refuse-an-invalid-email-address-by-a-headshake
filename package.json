@@ -1,0 +1,12 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "refuse an invalid email address by a headshake",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "keen1483",
+  "license": "ISC"
+}

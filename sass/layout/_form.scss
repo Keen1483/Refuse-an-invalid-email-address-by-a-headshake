@@ -1,0 +1,29 @@
+.form {
+    &__group {
+        margin: 5rem 0 0 10rem;
+        & input {
+            border: 2px solid $cd-box;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            //transition: background-color 500ms;
+            &:focus {
+                border: 2px solid $cd-txt;
+            }
+            &:not(:focus):invalid {
+                background: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+                animation: headshake 100ms 2;
+            }
+        }
+        
+        & label {
+            display: block;
+            margin-left: 2rem;
+        }
+    }
+}
